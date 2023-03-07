@@ -79,7 +79,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://raw.githubusercontent.com/zunyuange/zunyaungeTV/main/meowcf.json");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://try.gitea.io/linzihai/zunyuangeTV/raw/branch/main/tv.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
